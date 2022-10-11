@@ -316,7 +316,7 @@ class WestarM5_198: 3AS_WestarM5_F
  picture="\3AS\3AS_Weapons\DC15A\Data\Textures\DC15A_Arsenal.paa";   
  magazines[]=
  {
-  "3AS_60Rnd_EC50_Mag"  
+  "Westar_Mag_198"  
  };     
  class WeaponSlotsInfo: WeaponSlotsInfo  
  {
@@ -473,6 +473,10 @@ class DC15L_198: 3AS_DC15L_F
  scope=2;
  scopeArsenal=2;
  displayName="[198th] DC-15L Rifle";  
+ magazines[]=
+ {
+  "DC15L_Mag_198"  
+ };   
  class WeaponSlotsInfo: WeaponSlotsInfo
  {
 	 class MuzzleSlot: MuzzleSlot
@@ -512,21 +516,17 @@ class Valken_198: 3AS_Valken38X_F
 {
  scope=2;
  scopeArsenal=2;
- displayName="[198th] Valken-38X_F";  
+ displayName="[198th] Valken-38X";  
 };
-class 3AS_RPS6_HP;
-class RPS6_198: 3AS_RPS6_HP
+class ls_weapon_rps6;	
+class ab198_rps: ls_weapon_rps6
 {
- scope=2;
- scopeArsenal=2;
- displayName="[198th] RPS6 Heavy Projectile";  
-};
-class 3AS_PLX1_F;
-class PLX1_198: 3AS_PLX1_F
-{
- scope=2;
- scopeArsenal=2;
- displayName="[198th] PLX-1 Guided Missile Launcher";    
+  displayName="[198th] RPS-6"
+  ace_overpressure_damage=1.3;
+  magazines[]=
+  {
+   "ab198_rps_Mag"
+  };
 };
 class 3AS_DC17S_F;
 class DC17S_198: 3AS_DC17S_F
@@ -536,7 +536,7 @@ class DC17S_198: 3AS_DC17S_F
  displayName="[198th] DC-17S Sidearm";  
  magazines[]=
  {
-  "3AS_16Rnd_EC20_Mag",
+  "DC17_Mag_198",
   "JLTS_stun_mag_short",
   "JLTS_stun_mag_long"
  };
@@ -549,7 +549,7 @@ class DC17_Dual_198: 3AS_DC17STest_F
  displayName="[198th] Dual DC-17S Sidearm";  
  magazines[]=
  {
-  "3AS_16Rnd_EC20_Mag",
+  "DC17_Mag_198",
   "JLTS_stun_mag_short",
   "JLTS_stun_mag_long"
  };    
@@ -559,7 +559,11 @@ class DC15C_198: 3AS_DC15C_F
 {
  scope=2;
  scopeArsenal=2;
- displayName="[198th] DC-15C";  
+ displayName="[198th] DC-15C"; 
+ magazines[]=
+ {
+  "DC15C_Mag_198"  
+ };
  class WeaponSlotsInfo: WeaponSlotsInfo
  {
 	 class MuzzleSlot: MuzzleSlot
@@ -600,7 +604,11 @@ class DC15CGL_198: 3AS_DC15C_GL
 {
  scope=2;
  scopeArsenal=2;
- displayName="[198th] DC-15C (UGL)";  
+ displayName="[198th] DC-15C (UGL)"; 
+ magazines[]=
+ {
+  "DC15C_Mag_198"  
+ };   
  class WeaponSlotsInfo: WeaponSlotsInfo
  {
 	 class MuzzleSlot: MuzzleSlot
@@ -636,3 +644,29 @@ class DC15CGL_198: 3AS_DC15C_GL
 	 };
  };
 };
+class launch_Titan_short_base;
+class ab198_plx: launch_Titan_short_base
+{
+		scope=2;
+		displayName="[198th] PLX-1"
+		model="\SWLW_clones\launchers\plx1\PLX1.p3d";
+		picture="\SWLW_clones\launchers\plx1\data\ui\PLX1_ui.paa";
+		handAnim[]=
+		{
+			"OFP2_ManSkeleton",
+			"\SWLW_clones\launchers\plx1\anims\plx1_handanim.rtm"
+		};
+		cameraDir="look";
+		ace_overpressure_angle=45;
+		ace_overpressure_damage=0.69999999;
+		ace_overpresssure_priority=1;
+		ace_overpressure_range=5;
+		ace_reloadlaunchers_enabled=1;
+		weaponLockDelay = 2;
+		magazines[]=
+		{
+			"ab198_magHEAT",
+			"ab198_magAA"
+		};
+		magazineWell[]={};
+	};

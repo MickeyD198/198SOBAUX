@@ -112,6 +112,82 @@ class P2_Helmet_NCO_198: SWLB_clone_P2_helmet
 			};
 		};
 };
+class P2_Helmet_Medic_198: SWLB_clone_P2_helmet
+{
+ author="McDaniel";
+ scope=2;
+ scopeArsnal=2;
+ displayName="[198th] Clone Helmet (Medic)";
+ picture="\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
+ hiddenSelections[]=
+ {
+  "camo1"
+ };
+ hiddenSelectionsTextures[]=
+ {
+  "198_Armor\data\Helmets\P2_Medic_Helm.paa"
+ };
+ model="\SWLB_clones\SWLB_clone_P2_helmet.p3d";
+ ace_hearing_protection=1;
+ class ItemInfo: HeadgearItem
+		{
+			mass=10;
+			uniformModel="\SWLB_clones\SWLB_clone_P2_helmet.p3d";
+			hiddenSelections[]=
+			{
+				"camo1"
+			};
+			allowedSlots[]={801,901,701,605};
+			modelSides[]={6};
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName="HitHead";
+					armor=6;
+					passThrough=0.5;
+				};
+			};
+		};
+};
+class P2_Helmet_Medic_NCO_198: SWLB_clone_P2_helmet
+{
+ author="McDaniel";
+ scope=2;
+ scopeArsnal=2;
+ displayName="[198th] Clone Helmet (Medic) (NCO)";
+ picture="\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
+ hiddenSelections[]=
+ {
+  "camo1"
+ };
+ hiddenSelectionsTextures[]=
+ {
+  "198_Armor\data\Helmets\P2_Medic_NCO_helm.paa"
+ };
+ model="\SWLB_clones\SWLB_clone_P2_helmet.p3d";
+ ace_hearing_protection=1;
+ class ItemInfo: HeadgearItem
+		{
+			mass=10;
+			uniformModel="\SWLB_clones\SWLB_clone_P2_helmet.p3d";
+			hiddenSelections[]=
+			{
+				"camo1"
+			};
+			allowedSlots[]={801,901,701,605};
+			modelSides[]={6};
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName="HitHead";
+					armor=6;
+					passThrough=0.5;
+				};
+			};
+		};
+};
 class P2_Helmet_ARC_198: SWLB_clone_P15_helmet
 {
  author="McDaniel";
@@ -300,6 +376,44 @@ class P2_Helmet_AB_198: SWLB_clone_AB_helmet
 					passThrough=0.5;
 				};
 			};
+ };
+};
+class P2_Helmet_AB_NCO_198: SWLB_clone_AB_helmet
+{
+ author="McDaniel";
+ scope=2;
+ scopeArsnal=2;
+ displayName="[198th] Clone Helmet (Airborne) (NCO)";
+ picture="\SWLB_clones\data\ui\icon_SWLB_clone_ab_helmet_ca.paa";
+ hiddenSelections[]=
+ {
+  "camo1"
+ };
+ hiddenSelectionsTextures[]=
+ {
+  "198_Armor\data\Helmets\198_AB_Helm_NCO_co.paa"
+ };
+ model="\SWLB_clones\SWLB_clone_AB_helmet.p3d";
+ ace_hearing_protection=1;
+ class ItemInfo: HeadgearItem
+ {
+			mass=10;
+			uniformModel="\SWLB_clones\SWLB_clone_AB_helmet.p3d";
+			hiddenSelections[]=
+			{
+				"camo1"
+			};
+			allowedSlots[]={801,901,701,605};
+			modelSides[]={6};
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName="HitHead";
+					armor=6;
+					passThrough=0.5;
+				};
+			};
 		};
 };
 class Murk_Helmet_P1_2_198: SWLB_clone_P1_2_helmet
@@ -357,5 +471,82 @@ class ARF_Helmet_198: SWLB_clone_ARF_P1_helmet
   "198_Armor\data\Helmets\198_ARF_Helm.paa",
   "198_Armor\data\Helmets\198_ARF_Helm.paa",
   ""
+ };
+};
+class RTO_Helmet_198: SWLB_P2_SpecOps_Helmet
+{
+ author="McDaniel";
+ scope=2;
+ scopeArsnal=2;
+ displayName="[198th] Clone Helmet (RTO)";
+ hiddenSelections[]=
+ {
+  "camo1"
+ };
+ hiddenSelectionsTextures[]=
+ {
+  "198_Armor\data\Helmets\198_P2_RTO_Helm.paa"
+ };
+};
+class RTO_NCO_Helmet_198: SWLB_P2_SpecOps_Helmet
+{
+ author="McDaniel";
+ scope=2;
+ scopeArsnal=2;
+ displayName="[198th] Clone Helmet (RTO) (NCO)";
+ hiddenSelections[]=
+ {
+  "camo1"
+ };
+ hiddenSelectionsTextures[]=
+ {
+  "198_Armor\data\Helmets\198_P2_RTO_NCO_Helm.paa"
+ };
+};
+class RTO_Helmet_Bishop_198: SWLB_P2_SpecOps_Helmet
+{
+ author="McDaniel";
+ scope=2;
+ scopeArsnal=2;
+ displayName="[198th] Clone Helmet (Bishop)";
+ hiddenSelections[]=
+ {
+  "camo1"
+ };
+ hiddenSelectionsTextures[]=
+ {
+  "198_Armor\data\Helmets\198_Bishop_RTO_Helm.paa"
+ };
+};
+class Engineer_Helm_198: SWLB_clone_eng_helmet
+{
+ author="McDaniel";
+ scope=2;
+ scopeArsnal=2;
+ displayName="[198th] Clone Helmet (Engineer)";
+  hiddenSelections[]=
+ {
+  "camo1",
+  "illum"
+ };
+ hiddenSelectionsTextures[]=
+ {
+  "198_Armor\data\Helmets\P2_Eng_Helm.paa"
+ };
+};
+class Engineer_Helm_NCO_198: SWLB_clone_eng_helmet
+{
+ author="McDaniel";
+ scope=2;
+ scopeArsnal=2;
+ displayName="[198th] Clone Helmet (Engineer) (NCO)";
+  hiddenSelections[]=
+ {
+  "camo1",
+  "illum"
+ };
+ hiddenSelectionsTextures[]=
+ {
+  "198_Armor\data\Helmets\P2_Eng_NCO_Helm.paa"
  };
 };
